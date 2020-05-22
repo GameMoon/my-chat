@@ -14,7 +14,7 @@ export class Login extends Component {
 
                 
                 {this.state.register &&
-                    <TextInput type="text" placeholder="Display Name (Agent Smith)" value={this.state.displayName}
+                    <TextInput type="text" placeholder="Display Name (Agent Smith)" key={this.state.displayName} value={this.state.displayName}
                         onChange={e => this.setState({ displayName: e })} onEnter={() => this.onClick()} autofocus={true} />}
 
                 <TextInput type="email" placeholder="Email (someone@example.com)" value={this.state.email}
